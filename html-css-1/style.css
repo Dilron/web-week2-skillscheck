@@ -43,7 +43,7 @@ body {
     color: rgb(194, 194, 87);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: uppercase;
-    font-size: 10vh;
+    font-size: 9vh;
 }
 
 .white-wrap {
@@ -84,22 +84,26 @@ body {
 }
 
 .content-wrap {
-    height: 28%;
+    height: 24%;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
 .text-box {
-    width: 38%;
+    width: 44%;
     height: 100%;
-    font-size: .7em;
+    font-size: .6em;
 }
 
 .pic-box {
-    width: 38%;
     height: 100%;
     background: lime;
+}
+
+.elefant {
+    height: 100%;
+    width: auto;
 }
 
 
