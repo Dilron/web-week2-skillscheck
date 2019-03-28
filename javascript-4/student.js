@@ -29,8 +29,12 @@ let me = {
     superHeroName: 'The Crimson Avenger',
     homeTown: 'Bend',
     superPowers: ['riot starting', 'booze', 'justice'],
-    superPowerXP: Math.floor(Math.random() * 100) + 1,
-    profileImage: `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
+    superPowerXP: function(){
+        return Math.floor(Math.random() * 100) + 1
+    },
+    profileImage: function(){
+        return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
+    }
 }
 
 //////////////////Step 3////////////////////
@@ -57,7 +61,7 @@ function setColor(arr){
         if(arr[i] === 'blue'){
             arr[i] = '#4D4DFF'
         }
-        background(regularName, superName, homeTown)
+        background(arr[0], arr[1], arr[2])
     }
 }
 
