@@ -71,9 +71,9 @@ function setColor(arr){
 // CODE HERE
 
 function setPowers(arr){
-    for(let i = 0; i < arr.length; i++){
-        createLi(arr[i])
-    }
+    arr.map(function(ele){
+        createLi(arr[ele])
+    })
 }
 
 
